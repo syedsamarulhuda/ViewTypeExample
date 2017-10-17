@@ -2,6 +2,7 @@ package com.example.samar.viewtypeexample.ui.view;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.samar.viewtypeexample.R;
@@ -12,17 +13,17 @@ import com.example.samar.viewtypeexample.R;
 
 public class ViewHolderHoriz extends RecyclerView.ViewHolder {
 
-    private TextView label;
+    private ImageView img;
     public ViewHolderHoriz(View v) {
         super(v);
-        label = (TextView) v.findViewById(R.id.tv1);
+        img = (ImageView) v.findViewById(R.id.img);
     }
 
-    public TextView getLabel() {
-        return label;
+    public ImageView getImg() {
+        return img;
     }
 
-    public void setLabel(TextView label) {
-        this.label = label;
+    public void setImg(ImageView img) {
+        this.img = img;
     }
 }

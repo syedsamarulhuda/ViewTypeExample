@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
     android:orientation="vertical">
 
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/default_img"
-        android:scaleType="fitCenter" />
+        android:id="@+id/img"
+        android:layout_width="324dp"
+        android:layout_height="340dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img"
+         />
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textAppearance="?android:attr/textAppearanceListItemSmall"
-        android:layout_marginTop="30dp"
-        android:gravity="center_vertical"/>
+
 
 </LinearLayout>

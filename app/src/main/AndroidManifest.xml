@@ -15,6 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activity.CategoryActivity" />
+        <activity android:name=".ui.activity.CartActivtiy" />
+        <activity android:name=".ui.activity.WishlistActivity" />
+        <activity android:name=".ui.activity.ProfileActivity" />
+        <activity android:name=".ui.activity.CalendarActivity" />
+        <activity android:name=".ui.activity.OccasionActivity" />
+        <activity android:name=".ui.activity.ListActivity"></activity>
     </application>
 
 </manifest>

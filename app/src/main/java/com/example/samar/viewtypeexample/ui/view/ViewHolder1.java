@@ -5,44 +5,37 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.samar.viewtypeexample.R;
+import com.example.samar.viewtypeexample.ui.adapter.HorizontalAdapter;
+import com.example.samar.viewtypeexample.ui.adapter.HorizontalTwoAdapter;
 
 /**
  * Created by samar on 12/11/16.
  */
 
 public class ViewHolder1 extends RecyclerView.ViewHolder {
-    private TextView label1, label2;
-    private RecyclerView rvList;
+    private RecyclerView rvListTwo;
+    HorizontalTwoAdapter horizontalTwoAdapter;
 
     public ViewHolder1(View v) {
         super(v);
-        label1 = (TextView) v.findViewById(R.id.text1);
-        label2 = (TextView) v.findViewById(R.id.text2);
-        rvList=(RecyclerView)v.findViewById(R.id.rvList);
+
+        rvListTwo=(RecyclerView)v.findViewById(R.id.rv_list_two);
 
     }
 
-    public TextView getLabel1() {
-        return label1;
+    public RecyclerView getRvListTwo() {
+        return rvListTwo;
     }
 
-    public void setLabel1(TextView label1) {
-        this.label1 = label1;
+    public void setRvListTwo(RecyclerView rvListTwo) {
+        this.rvListTwo = rvListTwo;
     }
 
-    public TextView getLabel2() {
-        return label2;
+    public HorizontalTwoAdapter getHorizontalTwoAdapter() {
+        return horizontalTwoAdapter;
     }
 
-    public void setLabel2(TextView label2) {
-        this.label2 = label2;
-    }
-
-    public RecyclerView getRvList() {
-        return rvList;
-    }
-
-    public void setRvList(RecyclerView rvList) {
-        this.rvList = rvList;
+    public void setHorizontalTwoAdapter(HorizontalTwoAdapter horizontalTwoAdapter) {
+        this.horizontalTwoAdapter = horizontalTwoAdapter;
     }
 }

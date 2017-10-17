@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
     tools:context="com.example.samar.viewtypeexample.ui.activity.MainActivity">
 
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rList"
-        style="@style/ScrollStyle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
-</LinearLayout>
+
+        <ImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/search" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rList"
+            style="@style/ScrollStyle"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/footer_layout" />
+
+</RelativeLayout>

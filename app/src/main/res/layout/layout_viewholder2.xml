@@ -1,46 +1,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#fff"
     android:orientation="vertical"
     >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/ivExample"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="115dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/default_img"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="29dp"
+        android:src="@drawable/store"
         android:scaleType="fitXY" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-
-        >
-
-        <TextView
-            android:id="@+id/tvName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="name"
-            android:textColor="@color/colorAccent"
-            android:textSize="20dp"
-            />
-
-        <Button
-            android:id="@+id/btnDetail"
-            android:layout_width="125dp"
-            android:layout_height="45dp"
-            android:text="details"
-           android:layout_marginLeft="20dp"
-            />
-
-    </LinearLayout>
 
 
 </LinearLayout>

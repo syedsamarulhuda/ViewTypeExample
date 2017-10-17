@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.samar.viewtypeexample.ui.activity.ListActivity">
+
+
+    <ImageView
+        android:id="@+id/ivListToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="-20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pro_list_header" />
+
+    <ImageView
+        android:id="@+id/ivListFilter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ivListToolbar"
+        android:src="@drawable/pro_filter" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivListFilter">
+
+        <ImageView
+            android:id="@+id/ivList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/all_l_ist" />
+
+    </ScrollView>
+
+</RelativeLayout>
